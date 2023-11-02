@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Post</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Add New Post</h1>
+    <%- include('header') %>
+    <form action="/new-post" method="post">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="content" placeholder="Content" required></textarea>
+        <button type="submit">Add Post</button>
+    </form>
+    <a class="back-to-home" href="/">Back to Home</a>
+   
+
+</body>
+</html>
